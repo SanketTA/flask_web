@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://kit.fontawesome.com/7cd4e60cf6.js" crossorigin="anonymous"></script>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.container-p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* background-color: red;s */
+}
+
+body::before {
+    content: ' ';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    top: 0px;
+    background-image: url('/static/images/7854.jpg');
+    opacity: 50%;
+}
+
+body {
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.6rem;
+}
+
+h1 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid white;
+}
+
+.box-p {
+    border-bottom: 2px solid white;
+    margin: 22px 0px;
+    /* border: 2px solid white;/ */
+}
+
+.box-p input {
+    font-family: 'Saira', sans-serif;
+    background: none;
+    width: 70%;
+    color: white;
+    margin: 10px 0px;
+    outline: none;
+    font-size: 1.2rem;
+    border: none;
+    margin-left: 10px;
+    padding: 5px 0px;
+    /* box-sizing: border-box; */
+    margin-bottom: 0px;
+
+}
+
+.btn-p {
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Saira', sans-serif;
+    display: block;
+    margin: 40px 0px;
+    margin-bottom: 0px;
+    width: 40%;
+    font-size: 1.2rem;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+
+.btn-p:hover {
+    opacity: 70%;
+    color: black;
+    background-color: white;
+}
+    </style>
+</head>
+<body>
+    <section class="headerlog">
+    <nav>
+        <a href="index.html"><img class="img-div" src="/static/images/Logoo.png"></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/Register">SIGN UP</a></li>
+                <li><a href="./About">ABOUT</a></li>
+                <li><a href="./contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+</section>
+    <form method="post" action="#"  required>
+<div class="container-p">
+    <h1>Log In</h1>
+    <div class="box-p">
+        	
+<i class="fa fa-envelope"></i>
+
+                <input type="name" name="username" id="username" placeholder="Enter your User id">
+
+    </div>
+    <div class="box-p">
+       	
+<i class="fa fa-key"></i>
+
+                <input type="password" name="password" id="password" placeholder="Enter Your password">
+                
+    </div>
+    <input class="btn-p" type="submit" value="Sign In">
+
+</div>
+</form>
+</body>
+</html>

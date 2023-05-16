@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Profile | Website Blocker</title>
+</head>
+<style>
+    /* Header styles */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Main content styles */
+main {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	margin: 0;
+	font-size: 32px;
+}
+
+p {
+	margin: 10px 0;
+	font-size: 18px;
+}
+
+button {
+	padding: 10px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #666;
+}
+
+h2 {
+	margin: 20px 0;
+	font-size: 24px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 10px 0;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+li button {
+	padding: 5px;
+	background-color: #fff;
+	color: #333;
+	border: none;
+	cursor: pointer;
+}
+
+li button:hover {
+	background-color: #ddd;
+}
+
+form {
+	display: flex;
+	margin-top: 20px;
+}
+
+label {
+	font-size: 18px;
+	margin-right: 10px;
+}
+
+input[type="text"] {
+	padding: 10px;
+	font-size: 18px;
+	border: none;
+	border-bottom: 2px solid #333;
+}
+
+input[type="text"]:focus {
+	outline: none;
+}
+
+/* Footer styles */
+footer {
+	background-color: #eee;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer p {
+	margin: 0 0 10px 0;
+	font-size: 14px;
+}
+
+footer a {
+	color: #333;
+	text-decoration: none;
+}
+
+footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+footer li {
+	margin: 0 10px;
+}
+
+</style>
+<body>
+
+	<header>
+		<img src="/static/images/Logoo.png">
+		<nav>
+			<ul>
+				<li><a href="/">HOME</a></li>
+				<li><a href="/Options">OPTIONS</a></li>
+				<li><a href="/Contact">CONTACT</a></li>
+				<li><a href="/About">ABOUT</a></li>
+				<li><a href="/Logout">LOGOUT</a></li>
+
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<img src="/static/images/Sanket.jpg" hight="90" width="90">
+		<h1>{{name}}</h1>
+
+		<p>Subscription Information: Premium Plan, Renewal Date: 05/01/2024, Payment Method: Credit Card</p>
+		{% if start %}
+        <h2>Seted Start: {{ start }}</h2>
+    	{% endif %}
+    	{% if end %}
+    	<h2>Seted End: {{ end }}</h2>
+		{% endif %}
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Website Blocker. All Rights Reserved.</p>
+		<p>Contact Us: <a href="mailto:info@websiteblocker.com">info@websiteblocker.com</a></p>
+		<ul>
+			<li><a href="https://twitter.com/websiteblocker">Twitter</a></li>
+			<li><a href="https://www.facebook.com/websiteblocker">Facebook</a></li>
+			<li><a href="https://www.instagram.com/websiteblocker">Instagram</a></li>
+		</ul>
+	</footer>
+
+</body>
+</html>
